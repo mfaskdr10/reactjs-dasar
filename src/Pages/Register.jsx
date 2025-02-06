@@ -7,14 +7,9 @@ const RegisterPage = () => {
     <AuthLayout
       title="Create Your Account"
       desc="Welcome, please enter your details"
+      type="register"
     >
       <FormRegister />
-      <p className="text-sm font-semibold text-center mt-5">
-        {`Have an account? `}
-        <Link to="/login" className="font-bold text-blue-600">
-          Sign In
-        </Link>
-      </p>
     </AuthLayout>
   );
 };

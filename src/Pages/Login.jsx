@@ -4,14 +4,8 @@ import AuthLayout from "../Components/Layouts/AuthLayout";
 
 const LoginPage = () => {
   return (
-    <AuthLayout title="Login" desc="Welcome, please enter your details">
+    <AuthLayout title="Login" desc="Welcome, please enter your details" type="login">
       <FormLogin />
-      <p className="text-sm font-semibold text-center mt-5">
-        {`Don't have an account? `}
-        <Link to="/register" className="font-bold text-blue-600">
-          Sign Up
-        </Link>
-      </p>
     </AuthLayout>
   );
 };
